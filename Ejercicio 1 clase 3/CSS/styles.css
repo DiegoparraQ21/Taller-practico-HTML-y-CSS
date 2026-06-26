@@ -1,8 +1,72 @@
+/* Estilos generales */
+
+body{
+
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    background-color:#e8e8e8;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* Tarjeta */
+
+.card{
+
+    width:420px;
+    padding:45px;
+    border-radius:20px;
+    text-align:center;
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("../images/fondo.jpg.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
 
 
-table {
-    border-collapse: collapse;
-    border: 1px solid #ccc;
-    background-color: rgb(229, 242, 126);
-    color: black;
+/* Titulo */
+
+.card h2{
+
+    color:#9fd3ff;
+    font-size:20px;
+}
+
+/* Lista */
+
+.card ul{
+
+    text-align:left;
+    margin-bottom:30px;
+}
+
+.card li{
+
+    margin-bottom:10px;
+}
+
+/* BOTON */
+
+.card__button{
+
+    display:inline-block;
+    text-decoration:none;
+    background-color:#00b2fe;
+    color:white;
+    padding:12px 25px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.card__button:hover{
+
+    background-color:#008bcb;
 }

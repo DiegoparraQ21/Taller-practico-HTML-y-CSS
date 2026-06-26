@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
+
 <body>
+    <h1>Formulario de registro de participantes</h1>
+    
+    <p>Complete la siguiente informacion para registrarse en la actividad academica </p>
+
+    <form action="#" method="post">
+
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="ingrese su nombre completo">
+        <br><br>
+
+        <label for="correo">Correo electronico:</label><br>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+        <br><br>
+
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" placeholder="3001234567">
+        <br><br>
+
+        <label for="fecha">Fecha de nacimiento:</label><br>
+        <input type="date" id="fecha" name="fecha">
+        <br><br>
+
+        <label>Género:</label><br>
+
+        <input type="radio" id="masculino" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label>
+
+        <input type="radio" id="femenino" name="genero" value="Femenino">
+        <label for="femenino">Femenino</label>
+
+        <br><br>
+
+        <label>Áreas de interés:</label><br>
+
+        <input type="checkbox" id="programacion" name="interes" value="Programación">
+        <label for="programacion">Programación</label><br>
+
+        <input type="checkbox" id="basesdatos" name="interes" value="Bases de Datos">
+        <label for="basesdatos">Bases de Datos</label><br>
+
+        <input type="checkbox" id="diseno" name="interes" value="Diseño Web">
+        <label for="diseno">Diseño Web</label>
+
+        <br><br>
+
+        <input type="submit" value="Registrarse">
+
+    </form>
     
 </body>
 </html>

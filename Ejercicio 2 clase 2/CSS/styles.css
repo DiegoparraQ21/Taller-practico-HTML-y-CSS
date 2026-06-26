@@ -1,8 +1,65 @@
+/* Estilos generales */
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 30px;
+}
 
-table {
-    border-collapse: collapse;
-    border: 1px solid #ccc;
-    background-color: rgb(229, 242, 126);
-    color: black;
+/* Título */
+
+h1{
+    text-align: center;
+    color: #0d47a1;
+}
+
+p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Formulario */
+
+form{
+    width: 420px;
+    margin: auto;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+}
+
+/* Etiquetas */
+
+label{
+    font-weight: bold;
+}
+
+/* Campos */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"]{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botón */
+
+input[type="submit"]{
+    background-color: #1976d2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #0d47a1;
 }

@@ -1,8 +1,60 @@
+/* Variables globales */
+:root{
+    --color-principal:#2563eb;
+    --color-secundario:#f97316;
+    --color-texto:#ffffff;
+    --color-variable:#16a34a;
+}
 
+/* Estilo generales */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f2f2f2;
+    margin:40px;
+}
 
-table {
-    border-collapse: collapse;
-    border: 1px solid #ccc;
-    background-color: rgb(229, 242, 126);
-    color: black;
+h1{
+    text-align:center;
+}
+
+/* Regla general */
+.box{
+    background-color:blue;
+    color:white;
+    margin:20px auto;
+    padding:20px;
+    border-radius:10px;
+    width:600px;
+}
+
+/* CONFLICTO 1
+Esta regla cambia el fondo a naranja para cualquier elemento que tenga la clase featured.*/
+.featured{
+    background-color:orange;
+}
+
+/* CONFLICTO 2
+Esta regla gana porque es MÁS ESPECÍFICA (.box.featured > .featured)*/
+.box.featured{
+    background-color:purple;
+}
+
+/* VARIABLES CSS
+Se utilizan las variables definidas en :root mediante var() */
+.variable{
+    background-color:var(--color-principal);
+    color:var(--color-texto);
+    border-left:8px solid var(--color-secundario);
+}
+
+/* OPACITY
+opacity afecta tanto al fondo como al texto */
+.transparent{
+    opacity:0.5;
+}
+
+/* RGBA
+Solo el fondo es transparente. El texto conserva su color normal. */
+.alpha{
+    background-color:rgba(0, 0, 0, 0.5);
 }

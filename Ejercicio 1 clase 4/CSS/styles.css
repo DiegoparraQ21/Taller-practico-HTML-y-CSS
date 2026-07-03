@@ -1,0 +1,125 @@
+/* -- Selectores por etiqueta -- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 20px;
+}
+
+h2 {
+    color: #1e3a8a;
+}
+
+/* -- Selectores por ID -- */
+#main-title {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+/* -- Selector por clase -- */
+.card {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.card-list {
+    display: flex;
+    gap: 15px;
+}
+
+/* -- Selectores mixtos -- */
+section.card-list {
+    margin-top: 30px;
+}
+
+button.primary {
+    background-color: rgb(26, 128, 26);
+    color: white;
+}
+
+/* -- Botones -- */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.secondary {
+    background-color: rgb(197, 194, 194);
+}
+
+/* -- Pseudoclase Hover -- */
+button:hover {
+    opacity: 0.6;
+}
+
+a:hover {
+    color: red;
+}
+
+/* -- Selectores de atributos -- */
+[disabled] {
+    background-color: #d1d5db;
+}
+
+[href] {
+    display: inline-block;
+    margin: 5px;
+}
+
+[href^="https"] {
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+[href$=".pdf"] {
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+[type="email"] {
+    border: 2px solid blue;
+}
+
+/* -- Galeria -- */
+.galeria {
+    list-style: none;
+    padding: 0;
+}
+
+.galeria li {
+    background-color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.galeria li:first-child {
+    background-color: lightgreen;
+}
+
+.galeria li:last-child {
+    background-color: lightcoral;
+}
+
+.galeria li:nth-child(3) {
+    background-color: lightblue;
+}
+
+.galeria li:nth-of-type(odd) {
+    border-left: 5px solid purple;
+}
+
+.galeria li:empty {
+    background-color: yellow;
+    height: 15px;
+}

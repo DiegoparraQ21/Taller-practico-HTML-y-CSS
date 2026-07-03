@@ -1,0 +1,78 @@
+/* -- Estilos Generales -- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 40px;
+}
+
+/* -- Estilo base para todas las cajas -- */
+.caja {
+    width: 350px;
+    background-color: #dbeafe;
+    border: 2px solid;
+    padding: 15px;
+    margin: 20px auto;
+    color: #1f2937;
+}
+
+/* -- Demostracion del contenido -- */
+.contenido {
+    height: 120px;
+}
+
+/* -- Demostracion del padding -- */
+.padding {
+    padding: 40px;
+}
+
+/* -- Demostracion del borde -- */
+.border {
+    border: 8px solid #dc2626;
+}
+
+/* -- Demostracion del margen -- */
+.margin {
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+/* -- Demostracion de esquina redondeadas -- */
+.radius {
+    border-radius: 30px;
+}
+
+/* -- Demostracion Overflow -- */
+
+/* -- El contenido se desborda y sigue visible -- */
+.overflow-visible {
+    height: 100px;
+    overflow: visible;
+    background-color: #fef3c7;
+}
+
+/* -- El contenido sobrante se oculta -- */
+.overflow-hidden {
+    height: 100px;
+    overflow: hidden;
+    background-color:#fecaca;
+}
+
+/* -- Siempre aparecen barras de desplazamiento -- */
+.overflow-scroll {
+    height: 100px;
+    overflow: scroll;
+    background-color: #bfdbfe;
+}
+
+/* -- Las barras aparecen solo si son necesarias -- */
+.overflow-auto {
+    height: 100px;
+    overflow: auto;
+    background-color: #d1fae5;
+}

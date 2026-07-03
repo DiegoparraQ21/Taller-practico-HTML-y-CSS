@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.cards {
+    display: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* -- bloque: card .. */
+.card {
+    width: 300px;
+    background-color: white;
+    border: 2px solid #c4c7cc;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    margin: 20px;
+}
+
+/* -- Elementos del bloque -- */
+.card__title {
+    color: #ef6a04;
+    margin-bottom: 15px;
+}
+
+.card__text {
+    color: #373e48;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.card__button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #6b7280;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card__button:hover{
+    opacity: 0.5;
+}
+
+/* -- Modificador del bloque -- */
+.card__button--primary {
+    background-color: #2262eb;
+}
+
+.card--featured {
+    margin: 20px;
+}

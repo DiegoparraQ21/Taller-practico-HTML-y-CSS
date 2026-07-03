@@ -1,0 +1,104 @@
+/* -- Reinicio basico -- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -- Estilos generales -- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+/* -- Encabezado -- */
+header {
+    background-color: #1f2937;
+    color: white;
+    padding: 2rem;
+}
+
+/* -- Navegacion con flex-box -- */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+/* -- Enlaces -- */
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #374151;
+    border-radius: 8px;
+
+     /* - Comparacion con display - */
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #4b5563;
+}
+
+/* -- Contenido principal -- */
+main {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+/* -- Contenedor de tarjetas -- */
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* -- Tarjetas -- */
+.tarjeta {
+    background-color: white;
+    width: 300px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+
+    /* - Para usar absolute dentro - */
+    position: relative;
+}
+
+/* -- Etiqueta absoluta -- */
+.etiqueta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: crimson;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+}
+
+/* -- Boton fijo -- */
+.btn-fijo {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background-color: #2563eb;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.btn-fijo:hover {
+    background-color: #1d4ed8;
+}
+
